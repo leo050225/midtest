@@ -3,11 +3,7 @@ import os
 import pygame
 import requests
 
-# 關鍵修正：強制略過本機代理，防止 macOS / Conda 將 127.0.0.1 請求導向 Proxy
-os.environ["NO_PROXY"] = "127.0.0.1,localhost"
-os.environ["no_proxy"] = "127.0.0.1,localhost"
-
-API_BASE_URL = "http://127.0.0.1:8000"
+API_BASE_URL = "https://midtest-prg8.onrender.com"
 
 COLOR_BG = (18, 18, 19)
 COLOR_SIDEBAR_BG = (24, 24, 27)
